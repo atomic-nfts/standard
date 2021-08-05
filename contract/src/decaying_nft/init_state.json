@@ -1,0 +1,20 @@
+{
+  "owner": "WL32qc-jsTxCe8m8RRQfS3b3MacsTQySDmJklvtkGFc",
+  "title": "Tom Brady",
+  "name": "nfl_collectibles",
+  "description": "GOAT",
+  "ticker": "NFL",
+  "balances": {
+    "WL32qc-jsTxCe8m8RRQfS3b3MacsTQySDmJklvtkGFc": 1
+  },
+  "contentType": "text/html",
+  "createdAt": "1624057295",
+  "decay":{ 
+    "minted": "731128",
+    "lastLock": "731128",
+    "lockState" : "65",
+    "lastMax" : "0"
+  },
+  "tags": [],
+  "ethOwnerAddress": "0xf990AD1561D0846bCC7ac04130c926b7259Fe7cA"
+}

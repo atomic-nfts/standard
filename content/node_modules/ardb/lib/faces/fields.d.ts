@@ -1,0 +1,1 @@
+export declare type fieldType = 'id' | 'anchor' | 'signature' | 'recipient' | 'owner' | 'owner.address' | 'owner.key' | 'fee' | 'fee.winston' | 'fee.ar' | 'quantity' | 'quantity.winston' | 'quantity.ar' | 'data' | 'data.size' | 'data.type' | 'tags' | 'tags.name' | 'tags.value' | 'block' | 'block.id' | 'block.timestamp' | 'block.height' | 'block.previous' | 'parent' | 'parent.id';

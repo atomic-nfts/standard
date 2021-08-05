@@ -1,0 +1,63 @@
+{
+  "name": "narcissus",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@_koi/sdk": "^2.1.34",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.1",
+    "can-ndjson-stream": "^1.0.2",
+    "css-loader": "^4.0.0",
+    "eol": "^0.9.1",
+    "gif-frames": "^1.0.1",
+    "glob": "^7.1.7",
+    "global": "^4.4.0",
+    "libgif": "^0.0.3",
+    "path": "^0.12.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-gif-player": "^0.4.2",
+    "react-scripts": "^4.0.3",
+    "sass-loader": "10",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "yarn run build:react && yarn run build:bundle",
+    "build:react": "react-scripts build",
+    "build:bundle": "webpack --config webpack.config.js",
+    "build:old": "react-scripts build",
+    "blastoff" : "yarn build && yarn arweave:pack && yarn deploy",
+    "deploy": "node deploy.js",
+    "arweave:pack": "arweave package build/index.html pkg/index.html",
+    "arweave:deploy_soft": "arweave deploy pkg/index.html --package",
+    "testIframe": "http-server ./",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "sass": "^1.35.2",
+    "webpack-cli": "^4.7.2"
+  }
+}

@@ -1,0 +1,55 @@
+{
+	"name": "prando",
+	"version": "6.0.1",
+	"description": "Deterministic pseudo-random number generator for JavaScript and TypeScript",
+	"main": "./dist/Prando.umd.js",
+	"module": "./dist/Prando.es.js",
+	"types": "./dist/Prando.d.ts",
+	"scripts": {
+		"build": "rimraf dist && rollup -c",
+		"build:declarations": "tsc -d",
+		"dev": "rollup -c -w",
+		"test": "jest --testMatch **/test/**/*.test.js",
+		"test:coverage": "yarn test --coverage",
+		"test:coverage:coveralls": "yarn test --coverage --coverageReporters=text-lcov | coveralls",
+		"test:watch": "yarn test --watchAll",
+		"lint": "eslint src/**/*.ts",
+		"prepublish": "yarn build && yarn build:declarations"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/zeh/prando.git"
+	},
+	"keywords": [
+		"rng",
+		"prng",
+		"random",
+		"random number generator",
+		"deterministic",
+		"aleatory",
+		"seed"
+	],
+	"author": "Zeh Fernando <npm@zehfernando.com> http://zehfernando.com",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/zeh/prando/issues"
+	},
+	"homepage": "https://github.com/zeh/prando#readme",
+	"devDependencies": {
+		"@babel/core": "^7.14.0",
+		"@babel/preset-env": "^7.13.10",
+		"@rollup/plugin-typescript": "^8.2.0",
+		"@typescript-eslint/eslint-plugin": "^4.22.0",
+		"@typescript-eslint/parser": "^4.22.0",
+		"coveralls": "^3.1.0",
+		"eslint": "^7.25.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-prettier": "^3.4.0",
+		"jest": "^26.6.3",
+		"prettier": "^2.2.1",
+		"rimraf": "^3.0.2",
+		"rollup": "^2.41.0",
+		"tslib": "^2.2.0",
+		"typescript": "^4.2.3"
+	}
+}

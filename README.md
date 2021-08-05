@@ -1,82 +1,33 @@
-# Atomic NFTs 
-An Atomic NFT uses Arweave Transaction Meta Data to generate a Smart Contract and store a media file in a single transaction. 
+# Project Narcissus
+The Koii Narcissus Flower blooms only when given attention.
 
-This unique standard makes a new type of NFT that is:
- - Eco-friendly (contracts are lazily executed, and proof of work is used minimally)
- - Contracts and media are intertwined and cannot be separated
- - Media and contract data use a common locator
- - Proofs of Real traffic provide attention rewards via Koii
- - Can be bridged to any blockchain network
- 
-# General Structure
-The standard contract for Atomic NFTs can be found here: `I8xgq3361qpR8_DvqcGpkCYAUTMktyAgvkm6kGhJzEQ`
+If the flower receives attention, it will earn KOII tokens, which will be deposited into it's Koii Task.
 
-## The State Object
-The standard NFT has this common structure: 
-```
-{
-  "owner": "ay1uavTv9SVRKVIrUhH8178ON_zjAsZo2tcm5wiC4bI",
-  "title": "Missing piece",
-  "name": "Kirthivasan",
-  "description": "nothing makes a room emptier than wanting someone in it.\nspread love",
-  "ticker": "KOINFT",
-  "balances": {
-    "ay1uavTv9SVRKVIrUhH8178ON_zjAsZo2tcm5wiC4bI": 1
-  },
-  "contentType": "image/jpeg",
-  "createdAt": "1626023631"
-}
-```
+The Task rewards anyone who updates the lock state (locking in the latest attention scores) which improves the viewing experience for others by reducing the load time required when the NFT is viewed.
 
-## Contract Source
-A standard contract might look like this:
+The NFT can be viewed as an iframe using any Arweave gateway, and will eventually be expanded to submit it's own Proofs of Real Traffic. 
+
+## Deployment
+Deploying an Atomic NFT happens in two parts, which might seem odd, since it's only one NFT. Here's how it works:
+
+### 1. Deploy the Contract
+To deploy this NFT, first deploy the smart contract by entering the `contracts/` directory:
 ```
-export function handle(state, action) {
-  const input = action.input;
-  const caller = action.caller;
-  if (input.function === "transfer") {
-    const target = input.target;
-    ContractAssert(target, `No target specified.`);
-    ContractAssert(caller !== target, `Invalid token transfer.`);
-    const qty = input.qty;
-    ContractAssert(qty, `No quantity specified.`);
-    const balances = state.balances;
-    ContractAssert(caller in balances && balances[caller] >= qty, `Caller has insufficient funds`);
-    balances[caller] -= qty;
-    if (!(target in balances)) {
-      balances[target] = 0;
-    }
-    balances[target] += qty;
-    state.balances = balances;
-    return {state};
-  }
-  if (input.function === "balance") {
-    let target;
-    if (input.target) {
-      target = input.target;
-    } else {
-      target = caller;
-    }
-    const ticker = state.ticker;
-    const balances = state.balances;
-    ContractAssert(typeof target === "string", `Must specify target to retrieve balance for.`);
-    return {
-      result: {
-        target,
-        ticker,
-        balance: target in balances ? balances[target] : 0
-      }
-    };
-  }
-  throw new ContractError(`No function supplied or function not recognised: "${input.function}".`);
-}
+cd contracts/
+yarn deploy
+```
+This will return a contract ID, which you'll need in the next step.
+
+### 2. Deploy the Art
+To deploy the content iframe, you must specify the address of the contract deployed in Step (1).
+
+The content can then be built to an iframe and deployed to Arweave as an NFT by calling the commands below from within the `content/` directory.
+```
+cd content/
+yarn
+yarn build
+yarn arweave:pack
+yarn deploy
 ```
 
-## Bridging and Locking
-To make your NFTs able to be transfered across Koii bridges 
-```
-< @abel please insert code here >
-```
-
-
-## ???
+The final command will output a txId on Arweave, which will be the address of the new NFT.
