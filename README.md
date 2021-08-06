@@ -75,12 +75,10 @@ export function handle(state, action) {
 ```
 
 ## Bridging and Locking
-{: .fs-9 }
 
 The 'Lock' and 'Unlock' methods contain function for delegating ownership of an NFT when bridging to another chain. 
 
-#### Lock 
-{: .fs-6 }
+#### Lock
 
 The section below shows an example of a possible lock function:
 
@@ -110,8 +108,7 @@ export default function lock(state, action) {
 }
 ```
 
-#### Unlock 
-{: .fs-6 }
+#### Unlock
 
 The 'Unlock' method handles removing an NFT from custodianship.
 
