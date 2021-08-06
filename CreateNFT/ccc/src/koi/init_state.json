@@ -1,0 +1,28 @@
+
+{
+  "ticker": "TCT",
+  "name": "test",
+  "owner": "fWjYZQ2SAP7OPTv6_OiI2AtKilORFQ0MdjbmDJ2biHk",
+  "treasury": "0A00000000000000000000000000000000000000",
+  "balances": {
+    "13hHcRWT6bEgtyh-0zG8DtvE5amcTqEHhoqKCWmGf6g": 1365.0164277807587,
+    "WL32qc-jsTxCe8m8RRQfS3b3MacsTQySDmJklvtkGFc": 1599.7755485742189,
+    "D3lK6_xXvBUXMUyA2RJz3soqmLlztkv-gVpEP5AlVUo": 697.3226115607715,
+    "sQTWslyCdKF6oeQ7xXUYUV1bluP0_5-483FXH_RVZKU": 1604.385854532351,
+    "MqKaTw9bV2p6bnkZCKXOF7Rt8TTqU740saOILALB-Q0": 1166.9030396765097,
+    "7ZcchrEyaDZO8v0w3sZ780Y2NlbAWGs2kVXP-z5NBss": 1367.8180137861664,
+    "FeSD9TV8aB0GK0yby8A40KEX1N-3wrJQTDbRW4uUiEA": 100
+  },
+  "stakes": {
+    "fWjYZQ2SAP7OPTv6_OiI2AtKilORFQ0MdjbmDJ2biHk": 1000,
+    "WL32qc-jsTxCe8m8RRQfS3b3MacsTQySDmJklvtkGFc": 10000,
+    "D3lK6_xXvBUXMUyA2RJz3soqmLlztkv-gVpEP5AlVUo": 1000,
+    "13hHcRWT6bEgtyh-0zG8DtvE5amcTqEHhoqKCWmGf6g": 10000,
+    "zFGpdtH0tpXAvG7PDMhq-ExCR_w7c4PYuwmoRZKmMpA": 49
+  },
+  "stakeReleaseBlock": {
+    "zFGpdtH0tpXAvG7PDMhq-ExCR_w7c4PYuwmoRZKmMpA": 677545,
+    "D3lK6_xXvBUXMUyA2RJz3soqmLlztkv-gVpEP5AlVUo": 680811
+  },
+  "KOI_TASKS": []
+}

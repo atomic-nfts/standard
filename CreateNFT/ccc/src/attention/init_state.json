@@ -1,0 +1,69 @@
+{
+  "ticker": "ATR",
+  "name": "AttentionReward",
+  "owner": "D3lK6_xXvBUXMUyA2RJz3soqmLlztkv-gVpEP5AlVUo",
+  "registerRecords": {
+    "EKW3AApL4mdLc6sIhVr3Cn8VN7N9VAQUp2BNALHXFtQ": "sQTWslyCdKF6oeQ7xXUYUV1bluP0_5-483FXH_RVZKU",
+    "PzNLuVRTpV1tdcS8K9ADCIG6944kka431ShtJYJMZQI": "MqKaTw9bV2p6bnkZCKXOF7Rt8TTqU740saOILALB-Q0",
+    "KXFrIJ1828MpW8IKsuruH2r5Vp-nBKyX25uXLFdzOq0": "D3lK6_xXvBUXMUyA2RJz3soqmLlztkv-gVpEP5AlVUo",
+    "1UDe0Wqh51-O03efPzoc_HhsUPrmgBR2ziUfaI7CpZk": "WL32qc-jsTxCe8m8RRQfS3b3MacsTQySDmJklvtkGFc",
+    "qZa1iNiUus-kRbBqwx0UimPNGVtCSZvQAQ9aCvPfHmI": "FeSD9TV8aB0GK0yby8A40KEX1N-3wrJQTDbRW4uUiEA",
+    "OsrHVoEQot03wQfSzxHmMhZMwtYbanUZx5cjtdJcfk0": "cf3iB51tJrVSQ-j-TmcRuMYeuvho6y-7IrQm9O7QKIk",
+    "PJS-kIJYdSkML2kmxJl6PSp9gqU8_xZJWHZawxQOTsw": "7ZcchrEyaDZO8v0w3sZ780Y2NlbAWGs2kVXP-z5NBss",
+    "UUXc-AdLB2az_zvZ2LTSFeB5s_PO0-LzDRmDHnVicUs": "7ZcchrEyaDZO8v0w3sZ780Y2NlbAWGs2kVXP-z5NBss",
+    "cfhKMEd_pCZHHIKeVGZAilnITonqllwkA_yhiF2PaOw": "IsAUH6ruDQgbhr7SvfYUFzQJO-6MGXaRFfJ0FIyHvOQ"
+  },
+  "gateways": [],
+  "validBundlers": [
+    "WL32qc-jsTxCe8m8RRQfS3b3MacsTQySDmJklvtkGFc",
+    "FeSD9TV8aB0GK0yby8A40KEX1N-3wrJQTDbRW4uUiEA",
+    "D3lK6_xXvBUXMUyA2RJz3soqmLlztkv-gVpEP5AlVUo",
+    "fWjYZQ2SAP7OPTv6_OiI2AtKilORFQ0MdjbmDJ2biHk"
+  ],
+  "votes": [
+    {
+      "id": 0,
+      "type": "trafficlogs",
+      "status": "active",
+      "voted": [
+        "D3lK6_xXvBUXMUyA2RJz3soqmLlztkv-gVpEP5AlVUo",
+        "DymtKHHegWz-HWrNnOL12Rxz_7dLrY2R3wVwTFE8788",
+        "FeSD9TV8aB0GK0yby8A40KEX1N-3wrJQTDbRW4uUiEA"
+      ],
+      "stakeAmount": 2,
+      "yays": 3,
+      "nays": 0,
+      "bundlers": {
+        "D3lK6_xXvBUXMUyA2RJz3soqmLlztkv-gVpEP5AlVUo": [
+          "UzewuVYGndEvAg7eMMGneZR54lktx9dYJIuFtZg6a5g"
+        ]
+      },
+      "start": 711842,
+      "end": 711890
+    }
+  ],
+  "task": {
+    "open": 711830,
+    "close": 711890,
+    "partcipatesRate": {},
+    "rewardReport": [],
+    "dailyPayload": [
+      {
+        "block": 711830,
+        "payloads": [
+          {
+            "TLTxId": "e01F9r0DHxYdB78oLBXfvTcg9Kuf14YOoZJs9r31SuQ",
+            "owner": "D3lK6_xXvBUXMUyA2RJz3soqmLlztkv-gVpEP5AlVUo",
+            "gateWayId": "https://gateway-n2.amplify.host/logs/",
+            "voteId": 0,
+            "blockHeight": 711842,
+            "won": false
+          }
+        ],
+        "isRanked": false,
+        "isDistributed": false
+      }
+    ]
+  },
+  "blackList": []
+}
