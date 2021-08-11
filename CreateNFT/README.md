@@ -4,10 +4,10 @@ There's two easy steps to deploy your Atomic NFTs, check this out:
 
 ### 1. Deploy the Template Contract
 
-First, enter the `contracts/` directory:
+First, enter the `CreateNft/ccc` directory:
 
 ```
-cd contracts/
+cd CreateNft/ccc
 
 ```
 
@@ -27,8 +27,8 @@ yarn deploy [contract]
 
 Examples:
 
-- `yarn deploy koii`
-- `yarn deploy attention`
+- `yarn deploy nft`
+- `yarn deploy vault`
 
 This will return a contract ID, which you'll need in the next step.
 

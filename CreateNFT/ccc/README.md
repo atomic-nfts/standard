@@ -6,8 +6,8 @@
 
 Examples:
 
-- `yarn deploy koi`
-- `yarn deploy attention`
+- `yarn deploy nft`
+- `yarn deploy vault`
 
 ## Testing
 

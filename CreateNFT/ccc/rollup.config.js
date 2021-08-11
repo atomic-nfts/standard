@@ -4,19 +4,27 @@ import nodePolyfills from "rollup-plugin-node-polyfills";
 
 export default [
   {
-    input: "src/koi/index.js",
+    input: "src/collection/index.js",
     output: {
-      file: "dist/koi.js",
-      format: "cjs"
+      file: "dist/collection.js",
+      format: "cjs",
     },
-    plugins: [resolve({ preferBuiltins: false }), commonjs(), nodePolyfills()]
+    plugins: [resolve({ preferBuiltins: false }), commonjs(), nodePolyfills()],
   },
   {
-    input: "src/attention/index.js",
+    input: "src/nft/index.js",
     output: {
-      file: "dist/attention.js",
-      format: "cjs"
+      file: "dist/nft.js",
+      format: "cjs",
     },
-    plugins: [resolve({ preferBuiltins: false }), commonjs(), nodePolyfills()]
-  }
+    plugins: [resolve({ preferBuiltins: false }), commonjs(), nodePolyfills()],
+  },
+  {
+    input: "src/vault/index.js",
+    output: {
+      file: "dist/valut.js",
+      format: "cjs",
+    },
+    plugins: [resolve({ preferBuiltins: false }), commonjs(), nodePolyfills()],
+  },
 ];

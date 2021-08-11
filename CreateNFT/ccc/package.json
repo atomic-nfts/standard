@@ -10,6 +10,7 @@
     "deploy": "yarn build && node ./bin/deploy.js"
   },
   "devDependencies": {
+    "@_koi/smartest": "^0.1.4",
     "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "eslint": "^7.28.0",

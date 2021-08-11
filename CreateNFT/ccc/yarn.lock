@@ -2,6 +2,15 @@
 # yarn lockfile v1
 
 
+"@_koi/smartest@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@_koi/smartest/-/smartest-0.1.4.tgz#352552a191d3ea870148c3f9f038d60285187c90"
+  integrity sha512-8bo/f5kv6ai+j9LeKSkrv3Jji8pRI8brWjUGmE9U5E2WikvtXj8ttUDYy5pBJk9vLnspVn6NPfJ7+bfkUP30+w==
+  dependencies:
+    "@weavery/clarity" "^0.1.5"
+    bignumber.js "^9.0.1"
+    smartweave "0.4.31"
+
 "@babel/code-frame@7.12.11":
   version "7.12.11"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"
@@ -1284,7 +1293,7 @@ slice-ansi@^4.0.0:
     astral-regex "^2.0.0"
     is-fullwidth-code-point "^3.0.0"
 
-smartweave@^0.4.31:
+smartweave@0.4.31, smartweave@^0.4.31:
   version "0.4.31"
   resolved "https://registry.yarnpkg.com/smartweave/-/smartweave-0.4.31.tgz#d5647cdee11ca7a2ddaddd8384b8f46260d32727"
   integrity sha512-DOW0AimcxnWGdcCPZm9hpAmwJ79uywcyLxu1HXPlWHEbwaN2TqYf4OgYMZTlHXVXXGk+m7PutUufgkx+Hv+fUQ==
