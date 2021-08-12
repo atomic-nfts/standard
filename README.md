@@ -1,40 +1,40 @@
-# Atomic NFTs 
+# Atomic NFTs
+
 The official docs portal can be found on [atomicnft.com](https://atomicnft.com/).
 
-An Atomic NFT uses Arweave Transaction Meta Data to generate a Smart Contract and store a media file in a single transaction. 
+An Atomic NFT uses Arweave Transaction Meta Data to generate a Smart Contract and store a media file in a single transaction.
 
 This unique standard makes a new type of NFT that is:
- - Eco-friendly (contracts are lazily executed, and proof of work is used minimally)
- - Contracts and media are intertwined and cannot be separated
- - Media and contract data use a common locator
- - Proofs of Real traffic provide attention rewards via Koii
- - Can be bridged to any blockchain network
+
+- Eco-friendly (contracts are lazily executed, and proof of work is used minimally)
+- Contracts and media are intertwined and cannot be separated
+- Media and contract data use a common locator
+- Proofs of Real traffic provide attention rewards via Koii
+- Can be bridged to any blockchain network
 
 # Contributing
+
 Contribute to atomic-nfts and make it better, here's the tutorial to make a good, clean pull request.
 
 ## How to make a clean pull request
-- Create a personal fork of the project on Github.
-- Clone the fork on your local machine. Your remote repo on Github is called `origin`.
-- Add the original repository as a remote called `upstream`.
-- If you created your fork a while ago be sure to pull upstream changes into your local repository.
-- Create a new branch to work on! Branch from `develop` if it exists, else from `master`.
-- Implement/fix your feature, comment your code.
-- If the project has tests run them!
-- Write or adapt tests as needed.
-- Add or change the documentation as needed.
-- Push your branch to your fork on Github, the remote `origin`.
-- From your fork open a pull request in the correct branch. Target the project's `develop` branch if there is one, else go for `master`!
-- Once the pull request is approved and merged you can pull the changes from `upstream` to your local repo and delete
-your extra branch(es).
 
-And last but not least: Always write your commit messages in the present tense. Your commit message should describe what the commit, when applied, does to the code – not what you did to the code.
+- First, go to [atomicnft.com](https://atomicnft.com/){: target="\_blank"}.
+- Go to the page you want to make it better.
+- Click the `Suggest edits on Github`.
+- Edit the file.(There's a pencil icon)
+- After you finish, write the description and choose "Create a new branch". Give it a clear name.
+- Click `Propose changes`.
+
+The new branch will be created and you are done!
 
 # General Structure
+
 The standard contract for Atomic NFTs can be found here: `I8xgq3361qpR8_DvqcGpkCYAUTMktyAgvkm6kGhJzEQ`
 
 ## The State Object
-The standard NFT has this common structure: 
+
+The standard NFT has this common structure:
+
 ```
 {
   "owner": "ay1uavTv9SVRKVIrUhH8178ON_zjAsZo2tcm5wiC4bI",
@@ -51,7 +51,9 @@ The standard NFT has this common structure:
 ```
 
 ## Contract Source
+
 A standard contract might look like this:
+
 ```
 export function handle(state, action) {
   const input = action.input;
@@ -96,7 +98,7 @@ export function handle(state, action) {
 
 ## Bridging and Locking
 
-The 'Lock' and 'Unlock' methods contain function for delegating ownership of an NFT when bridging to another chain. 
+The 'Lock' and 'Unlock' methods contain function for delegating ownership of an NFT when bridging to another chain.
 
 #### Lock
 
