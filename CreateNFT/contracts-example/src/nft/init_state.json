@@ -1,14 +1,14 @@
 {
-  "owner": "Wj1NpKuRFFGf-YmYpnM99WVYQdAMnB9pNoatHY0NQbA",
+  "owner": "<Wallet Address>",
   "title": "Koii the best",
   "name": "Ihor Hryshchuk",
   "description": "the best ",
   "ticker": "KOINFT",
   "balances": {
-    "Wj1NpKuRFFGf-YmYpnM99WVYQdAMnB9pNoatHY0NQbA": 1
+    "<Wallet Address>": 1
   },
   "locked": [],
   "contentType": "image/jpeg",
-  "createdAt": "1624057295",
+  "createdAt": "1628810641085",
   "tags":[]
 }

@@ -11,7 +11,7 @@ cd contracts-example/
 
 ```
 
-Second, check the .env file, make sure the path is your arweavewallet.json
+Second, create .env file, make sure the path is your arweavewallet.json
 
 ```
 WALLET_LOCATION = path/to/your/wallet
@@ -27,6 +27,7 @@ yarn deploy [contract]
 
 Examples:
 
+- `yarn deploy nft`
 - `yarn deploy koii`
 - `yarn deploy attention`
 
