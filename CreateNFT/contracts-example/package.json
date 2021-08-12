@@ -20,6 +20,7 @@
     "rollup-plugin-node-polyfills": "^0.2.1"
   },
   "dependencies": {
+    "@_koi/sdk": "^2.1.46",
     "arweave": "^1.10.14",
     "dotenv": "^10.0.0",
     "smartweave": "^0.4.31"

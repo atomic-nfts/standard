@@ -7,14 +7,7 @@
   "balances": {
     "Wj1NpKuRFFGf-YmYpnM99WVYQdAMnB9pNoatHY0NQbA": 1
   },
-  "locked": [{
-    "UID":"unique identifier",
-    "vaultAddress":"zFGpdtH0tpXAvG7PDMhq-ExCR_w7c4PYuwmoRZKmMpA",
-    "lockedBy":"Wj1NpKuRFFGf-YmYpnM99WVYQdAMnB9pNoatHY0NQbA",
-    "amount":1,
-    "network":"ethereum",
-    "address":"test"
-  }],
+  "locked": [],
   "contentType": "image/jpeg",
   "createdAt": "1624057295",
   "tags":[]
