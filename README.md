@@ -11,7 +11,7 @@ This unique standard makes a new type of NFT that is:
  - Can be bridged to any blockchain network
 
 # Contributing
-If you want to contribute to atomic-nfts and make it better, here's the tutorial to make a good, clean pull request.
+Contribute to atomic-nfts and make it better, here's the tutorial to make a good, clean pull request.
 
 ## How to make a clean pull request
 - Create a personal fork of the project on Github.
