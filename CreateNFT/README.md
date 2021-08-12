@@ -7,7 +7,7 @@ There's two easy steps to deploy your Atomic NFTs, check this out:
 First, enter the `contracts/` directory:
 
 ```
-cd contracts/
+cd contracts-example/
 
 ```
 
