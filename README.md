@@ -18,7 +18,7 @@ Contribute to atomic-nfts and make it better, here's the tutorial to make a good
 
 ## How to make a clean pull request
 
-- First, go to [atomicnft.com](https://atomicnft.com/){: target="\_blank"}.
+- First, go to [atomicnft.com](https://atomicnft.com/){:target="_blank"}.
 - Go to the page you want to make it better.
 - Click the `Suggest edits on Github`.
 - Edit the file.(There's a pencil icon)
