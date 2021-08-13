@@ -53,3 +53,7 @@ node creatingNewNFT.js
 ```
 
 You're all done, Just a few minutes you could search your txID on [https://viewblock.io/arweave](https://viewblock.io/arweave)
+
+### 3. Backup option
+
+If the second step doesn't work well, please unzip the `NFTCreation.zip`. Then change the info in the `creatingNFT.js` in NFTCreation folder and try again.
