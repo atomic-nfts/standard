@@ -15,6 +15,10 @@ const arweave = Arweave.init({
 
 mintNFT();
 
+async function getNetworkBlockHeight() {
+  const network = await arweave.network.getInfo()
+  return network.height
+}
 
 async function mintNFT() {
     console.log('wallet:', process.env.WALLET_LOCATION)
@@ -50,7 +54,7 @@ async function handleData (nftData) {
         },
         "locked": [],
         "contentType": "text/html",
-        "createdAt": Date.now(),
+        "createdAtHeight": await getNetworkBlockHeight(),
         "tags":[]
     }
     let tx = await arweave.createTransaction({
