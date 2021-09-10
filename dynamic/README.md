@@ -1,5 +1,5 @@
-# Project Narcissus
-The Koii Narcissus Flower blooms only when given attention.
+# Example Dynamic NFT
+The Koii Narcissus Flower blooms only when given attention. This is an early version of that project, but does not contain the full logic. Try building your own!
 
 If the flower receives attention, it will earn KOII tokens, which will be deposited into it's Koii Task.
 
