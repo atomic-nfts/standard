@@ -1,0 +1,20 @@
+{
+  "owner": "oDApIgwavkt2Ks2egnIF27iMMLMaVY41raK2l07ONp0c",
+  "title": "Narcissus 0.0.1",
+  "name": "narcissus",
+  "description": "The narcissus opens if it receives more attention than the day before.",
+  "ticker": "GNAR",
+  "balances": {
+    "oDApIgwavkt2Ks2egnIF27iMMLMaVY41raK2l07ONp0c": 1
+  },
+  "contentType": "text/html",
+  "createdAt": "1624057295",
+  "decay":{ 
+    "minted": "766998",
+    "lastLock": "766998",
+    "lockState" : "0",
+    "lastMax" : "0"
+  },
+  "tags": [],
+  "ethOwnerAddress": "0x91BE931Cfce30Bfe921E985eC3348027281489A8"
+}

@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: red;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: red;
+}
+img.narcissus.hide {
+  display: none;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.narcissus {
+  width: auto;
+  height: 100vh;
+  z-index: 999;
+  position: absolute;
+  display: block;
+}
+img {
+  background: red;
+  width: auto;
+  height: 100vh;
+  z-index: 998;
+  position: absolute;
+  display: block;
+}
+.narcissus, img {
+  width: auto;
+  height: 100vh;
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  max-width: 100vw;
+}
+body {
+  background: black;
+  overflow: hidden;
+  height:100vh;
+  width:100vh;
+}
+
+@media only screen and (min-width: 500px) {
+  -ms-transform: translateY(+50%);
+  transform: translateY(+50%);
+}
+
+@media only screen and (min-width: 400px) {
+  img.narcissus {
+    top: 0;
+    width: auto;
+    left: 0;
+    height: 100vh;
+    max-width: 100vw;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

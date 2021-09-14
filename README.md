@@ -12,6 +12,8 @@ This unique standard makes a new type of NFT that is:
 - Proofs of Real traffic provide attention rewards via Koii
 - Can be bridged to any blockchain network
 
+Go to narcissus to check out the example about how to deploy a NFT.
+
 # Contributing
 
 Contribute to atomic-nfts and make it better, here's the tutorial to make a good, clean pull request.
