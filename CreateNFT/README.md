@@ -2,6 +2,10 @@
 
 There's two easy steps to deploy your Atomic NFTs, check this out:
 
+## Notice
+
+If you do not want to change any contract, please skip step 1.
+
 ### 1. Deploy the Template Contract
 
 First, enter the `contracts/` directory:
@@ -39,12 +43,14 @@ Now let's deploy the Atomic NFT:
 
 Check the creatingNewNFT.js file. Change the info to your own:
 
-Remember to change the contract ID:
+If you deployed your own contract, remember to change the contract ID:
 
 ```
 contractSrc => [contract ID]
 
 ```
+
+Change the wallet address, wallet path and NFT url etc.
 
 After the info is finished, deploy it:
 
@@ -54,6 +60,6 @@ node creatingNewNFT.js
 
 You're all done, Just a few minutes you could search your txID on [https://viewblock.io/arweave](https://viewblock.io/arweave)
 
-### 3. Backup option
+<!-- ### 3. Backup option
 
-If the second step doesn't work well, please unzip the `NFTCreation.zip`. Then change the info in the `creatingNFT.js` in NFTCreation folder and try again.
+If the second step doesn't work well, please unzip the `NFTCreation.zip`. Then change the info in the `creatingNFT.js` in NFTCreation folder and try again. -->
