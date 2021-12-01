@@ -2,11 +2,9 @@
 
 There's two easy steps to deploy your Atomic NFTs, check this out:
 
-## Notice
+#### Note: If you do not want to change any contract, please skip step 1.
 
-If you do not want to change any contract, please skip step 1.
-
-### 1. Deploy the Template Contract
+### 1. Deploy the Template Contract (Optional)
 
 First, enter the `contracts/` directory:
 
