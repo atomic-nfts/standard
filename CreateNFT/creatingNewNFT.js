@@ -60,7 +60,7 @@ async function main() {
   tx.addTag('Action', 'marketplace/Create');
   tx.addTag('App-Name', 'SmartWeaveContract');
   tx.addTag('App-Version', '0.3.0');
-  tx.addTag('Contract-Src', 'r_ibeOTHJW8McJvivPJjHxjMwkYfAKRjs-LjAeaBcLc'); // Or your own contract
+  tx.addTag('Contract-Src', 'r_ibeOTHJW8McJvivPJjHxjMwkYfAKRjs-LjAeaBcLc');
   tx.addTag('Init-State', JSON.stringify(initialState));
   try {
     await arweave.transactions.sign(tx, wallet);
