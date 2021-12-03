@@ -19,29 +19,29 @@ async function getDataBlob(imageUrl) {
 const fs=require("fs")
 async function main() {
   let imageOBJ = await getDataBlob(
-    'https://i0.hdslb.com/bfs/album/94731fefec0d6b1b9f0ab17bb97f66466d7e3886.png'
+    'https://i0.hdslb.com/bfs/album/94731fefec0d6b1b9f0ab17bb97f66466d7e3886.png' // paste your image url here
   );
   const initialState = {
-    "title": "avatar test soma",
-    "name": "Soma's avatar",
-    "description": "avatar testing",
+    "title": "",
+    "name": "",
+    "description": "",
     "ticker": "KOINFT",
     "balances": {
-      "oDApIgwavkt2Ks2egnIF27iMMLMaVY41raK2l07ONp0": 1
+      "<Wallet address>": 1
     },
     "owners": {
-      "1": "oDApIgwavkt2Ks2egnIF27iMMLMaVY41raK2l07ONp0"
+      "1": "<wallet address>"
     },
     "maxSupply": 5,
     "locked": [],
     "contentType": "image/png",
     "createdAt": "1624057295",
     "tags": [
-      "avatar"
+      ""
     ]
   }
   let tx;
-  let wallet = JSON.parse(fs.readFileSync("/Users/dongyue/atomic-nft/arweaveWallet.json","utf-8"));
+  let wallet = JSON.parse(fs.readFileSync("path/to/your/wallet","utf-8"));
   try {
     tx = await arweave.createTransaction(
       {
@@ -60,7 +60,7 @@ async function main() {
   tx.addTag('Action', 'marketplace/Create');
   tx.addTag('App-Name', 'SmartWeaveContract');
   tx.addTag('App-Version', '0.3.0');
-  tx.addTag('Contract-Src', 'l_n7gXxwzY3pgOZSu7RPOO27JDKApY9VKIgmQOoO09U');
+  tx.addTag('Contract-Src', 'r_ibeOTHJW8McJvivPJjHxjMwkYfAKRjs-LjAeaBcLc'); // Or your own contract
   tx.addTag('Init-State', JSON.stringify(initialState));
   try {
     await arweave.transactions.sign(tx, wallet);
