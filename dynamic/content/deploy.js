@@ -6,7 +6,7 @@ const eol = require('eol')
 var koii = require('@_koi/sdk/common');
 require("dotenv").config();
 var koi = new koii.Common(process.env.WALLET_LOCATION)
-var contractSrc = "1ZjIecqKGYdGTFMWR9kdGrmi77lMmZnA6dxEzWulyjo";
+var contractSrc = "l_n7gXxwzY3pgOZSu7RPOO27JDKApY9VKIgmQOoO09U";
 
 const arweave = Arweave.init({
   host: "arweave.net",
