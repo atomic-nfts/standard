@@ -17,12 +17,24 @@ contractSrc => [contract ID]
 
 ```
 
+Change you image src at line 22:
+
+```
+let imageOBJ = await getDataBlob(
+    '<image url>' // paste your image url here
+  );
+```
+
 Change the wallet address, wallet path and NFT url etc.(line 24 - line 44)
 
 After the info is finished, deploy it:
 
 ```
+
 node creatingNewNFT.js
+
 ```
 
 You're all done, Just a few minutes you could search your txID on [https://viewblock.io/arweave](https://viewblock.io/arweave)
+
+You can also go to `https://arweave.net/tx/<NFT id>/status` to check your contract status.
