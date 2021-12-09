@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@_koi/sdk": "^2.4.11",
     "arweave": "^1.10.15",
+    "file-type": "16.5.3",
     "node-fetch": "^2.6.1"
   }
 }

@@ -1,5 +1,6 @@
 const fs=require("fs")
-const arweave=require("arweave")
+const Arweave= require("arweave")
+const FileType=require("file-type")
 const arweave = Arweave.init({
   host: 'arweave.net',
   protocol: 'https',
@@ -10,16 +11,17 @@ const knode = require('@_koi/sdk/node');
 
 const ktools = new knode.Node();
 
-WALLET_KEY_LOCATION=""
+WALLET_KEY_LOCATION="/Users/dongyue/atomic-nft/arweaveWallet.json"
+const path = "/Users/dongyue/个人/表情包/testlocal.jpg"; 
 async function mintNFT(path) {
   await ktools.loadWallet(WALLET_KEY_LOCATION)
-      const contractSrc = 'isHwcXgHA4bqQpFCCuW9NgYHGFm0DKdWMvXbHOJw_xA';
+      const contractSrc = 'r_ibeOTHJW8McJvivPJjHxjMwkYfAKRjs-LjAeaBcLc';
       const nftData = await getBufferData(path);
 
       const metadata = {
-          owner: 'zFGpdtH0tpXAvG7PDMhq-ExCR_w7c4PYuwmoRZKmMpA', 
+          owner: 'oDApIgwavkt2Ks2egnIF27iMMLMaVY41raK2l07ONp0', 
           name: 'Koii',
-          description: 'test',
+          description: 'test local',
           ticker: 'TST'
 
       }
@@ -66,15 +68,7 @@ async function mintNFT(path) {
       console.log(`Transaction ${tx.id} status code is ${status.status}`)
 
       return result;
-  }
-
-
-
-
-
-
-
-
+}
 
 async function getBufferData(path){
   console.log('starting....');
@@ -83,26 +77,20 @@ async function getBufferData(path){
   console.log(mediaType);
   var obj = {};
   obj.contentType = mediaType.mime;
-
-
-      obj.data = picData;
-      return obj;
-
+  obj.data = picData;
+  return obj;
   }
 
 
-  async function getBuffer(path){
-    return new Promise(async function (resolve, reject) {
-         fs.readFile(path, async function(err, data){
-        if (err) return reject(err);
-        console.log("success reading file");
-        console.log(data); 
-        resolve(data) 
-
-   });
-
-
+async function getBuffer(path){
+  return new Promise(async function (resolve, reject) {
+    fs.readFile(path, async function(err, data){
+    if (err) return reject(err);
+    console.log("success reading file");
+    console.log(data); 
+  resolve(data) 
+      });
     });
+}
 
-
-  }
+mintNFT(path);
