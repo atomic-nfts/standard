@@ -31,7 +31,7 @@ The new branch will be created and you are done!
 
 # General Structure
 
-The standard contract for Atomic NFTs can be found here: `I8xgq3361qpR8_DvqcGpkCYAUTMktyAgvkm6kGhJzEQ`
+The standard contract for Atomic NFTs can be found here: `r_ibeOTHJW8McJvivPJjHxjMwkYfAKRjs-LjAeaBcLc`
 
 ## The State Object
 
@@ -48,7 +48,8 @@ The standard NFT has this common structure:
     "ay1uavTv9SVRKVIrUhH8178ON_zjAsZo2tcm5wiC4bI": 1
   },
   "contentType": "image/jpeg",
-  "createdAt": "1626023631"
+  "createdAt": "1626023631",
+  "locked":[]
 }
 ```
 
