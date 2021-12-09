@@ -41,7 +41,7 @@ async function main() {
     ]
   }
   let tx;
-  let wallet = JSON.parse(fs.readFileSync("path/to/your/wallet","utf-8"));
+  let wallet = JSON.parse(fs.readFileSync("/Users/dongyue/Koi/arweaveWallet.json","utf-8"));
   try {
     tx = await arweave.createTransaction(
       {
