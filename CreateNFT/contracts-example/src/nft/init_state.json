@@ -1,11 +1,11 @@
 {
-  "owner": "<Wallet Address>",
+  "owner": "oDApIgwavkt2Ks2egnIF27iMMLMaVY41raK2l07ONp0",
   "title": "Koii the best",
-  "name": "Ihor Hryshchuk",
+  "name": "Soma test",
   "description": "the best ",
   "ticker": "KOINFT",
   "balances": {
-    "<Wallet Address>": 1
+    "oDApIgwavkt2Ks2egnIF27iMMLMaVY41raK2l07ONp0": 1
   },
   "locked": [],
   "contentType": "image/jpeg",
