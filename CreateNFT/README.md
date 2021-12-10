@@ -8,6 +8,12 @@ There's two easy steps to deploy your Atomic NFTs, check this out:
 
 Let's deploy the Atomic NFT:
 
+First run `yarn` to install the node packages.
+
+```
+yarn
+```
+
 Check the `creatingNewNFT.js` file. Change the info to your own:
 
 (If you deployed your own contract, remember to change the contract ID:)
@@ -35,6 +41,8 @@ node creatingNewNFT.js
 
 ```
 
-You're all done, Just a few minutes you could search your txID on [https://viewblock.io/arweave](https://viewblock.io/arweave)
+### Check Your NFT
 
-You can also go to `https://arweave.net/tx/<NFT id>/status` to check your contract status.
+You're all done! You can go to `https://arweave.net/tx/<NFT id>/status` to check your contract status. If the status is `Pending` then that means your NFT is successfully deployed and arweave is working on it.
+
+Just a few minutes you could search your txID on [https://viewblock.io/arweave](https://viewblock.io/arweave). Then in the block page, Click `Link` button and it will show your NFT.
