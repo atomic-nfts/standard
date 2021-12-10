@@ -2,24 +2,18 @@
 
 ### Deploy the Template Contract (Optional)
 
-First, enter the `contracts/` directory:
 
-```
-cd contracts-example/
-
-```
-
-Second, create .env file, make sure the path is your arweavewallet.json
+First, create .env file, make sure the path is your arweavewallet.json
 
 ```
 WALLET_LOCATION = path/to/your/wallet
 ```
 
-Third, in `/src/nft/init_state.json` file, edit it to your own info.
+Second, in `/src/nft/init_state.json` file, edit it to your own info.
 
 - Notice: owner and balance should be your wallet address.
 
-Last step, in `index.js`. Check the function and customize teh function you want.
+Last step, in `index.js`. Check and customize the function you want.
 
 You're all set, now let's deploy the template contracts:
 
