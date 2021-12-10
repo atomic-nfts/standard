@@ -11,19 +11,18 @@ const knode = require('@_koi/sdk/node');
 
 const ktools = new knode.Node();
 
-WALLET_KEY_LOCATION="/Users/dongyue/Koi/arweaveWallet.json"
-const path = "/Users/dongyue/个人/表情包/testlocal.jpg"; 
+WALLET_KEY_LOCATION="<Your wallet path>>"
+const path = "<Your NFT local path>"; 
 async function mintNFT(path) {
-  await ktools.loadWallet(WALLET_KEY_LOCATION)
+  let wallet = JSON.parse(fs.readFileSync(WALLET_KEY_LOCATION));
       const contractSrc = 'r_ibeOTHJW8McJvivPJjHxjMwkYfAKRjs-LjAeaBcLc';
       const nftData = await getBufferData(path);
 
       const metadata = {
-          owner: 'oDApIgwavkt2Ks2egnIF27iMMLMaVY41raK2l07ONp0', 
-          name: 'Koii',
-          description: 'test local',
-          ticker: 'TST'
-
+          owner: '<Your wallet address>>', 
+          name: '',
+          description: '',
+          ticker: ''
       }
 
       let balances = {};
@@ -40,7 +39,7 @@ async function mintNFT(path) {
      let tx = await arweave.createTransaction({
           // eslint-disable-next-line no-undef
           data: nftData.data
-      }, ktools.wallet);
+      }, wallet);
       tx.addTag('Content-Type', nftData.contentType)
       tx.addTag('Exchange', 'Verto')
       tx.addTag('Action', 'marketplace/Create')
@@ -49,7 +48,7 @@ async function mintNFT(path) {
       tx.addTag('Contract-Src', contractSrc)
       tx.addTag('Init-State', JSON.stringify(initialState))
 
-      await arweave.transactions.sign(tx, ktools.wallet);
+      await arweave.transactions.sign(tx, wallet);
       const result = {};
       result.id = tx.id;
       console.log(tx);
