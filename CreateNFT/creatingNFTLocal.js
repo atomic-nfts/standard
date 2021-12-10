@@ -11,7 +11,7 @@ const knode = require('@_koi/sdk/node');
 
 const ktools = new knode.Node();
 
-WALLET_KEY_LOCATION="/Users/dongyue/atomic-nft/arweaveWallet.json"
+WALLET_KEY_LOCATION="/Users/dongyue/Koi/arweaveWallet.json"
 const path = "/Users/dongyue/个人/表情包/testlocal.jpg"; 
 async function mintNFT(path) {
   await ktools.loadWallet(WALLET_KEY_LOCATION)
