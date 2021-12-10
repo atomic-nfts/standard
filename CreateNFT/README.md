@@ -14,6 +14,8 @@ First run `yarn` to install the node packages.
 yarn
 ```
 
+### Option 1: Deploy a NFY by using image url
+
 Check the `creatingNewNFT.js` file. Change the info to your own:
 
 (If you deployed your own contract, remember to change the contract ID:)
@@ -38,6 +40,39 @@ After the info is finished, deploy it:
 ```
 
 node creatingNewNFT.js
+
+```
+
+### Option 2: Deploy a NFT by using local file
+
+Check the `creatingNFTLocal.js` file. Change the info to your own:
+
+(If you deployed your own contract, remember to change the contract ID:)
+
+```
+contractSrc => [contract ID]
+
+```
+
+Change to your wallet location: (line 14)
+
+```
+WALLET_KEY_LOCATION="<Your wallet path>>"
+```
+
+Change your image src at line 15:
+
+```
+const path = "<Your NFT local path>";
+```
+
+Change the owner, name and describtion etc.(line 22 - line 25)
+
+After the info is finished, deploy it:
+
+```
+
+node creatingNFTLocal.js
 
 ```
 
