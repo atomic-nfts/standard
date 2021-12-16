@@ -4,6 +4,10 @@ There's two easy steps to deploy your Atomic NFTs, check this out:
 
 #### Note: If you do not want to change any contract, please directly deploy your NFT.
 
+### Deploy your own contract
+
+To deploy your own contract, check the contracts-example directory and follow the steps.
+
 ### Deploy the Atomic NFTs
 
 Let's deploy the Atomic NFT:
