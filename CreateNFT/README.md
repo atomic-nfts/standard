@@ -82,6 +82,9 @@ node creatingNFTLocal.js
 
 ### Check Your NFT
 
-You're all done! You can go to `https://arweave.net/tx/<NFT id>/status` to check your contract status. If the status is `Pending` then that means your NFT is successfully deployed and arweave is working on it.
+You're all done! 
+1) Go to `https://arweave.net/tx/<NFT id>/status` to check your contract status. If the status is `Pending` then that means your NFT is successfully deployed and arweave is working on it.
 
-Just a few minutes you could search your txID on [https://viewblock.io/arweave](https://viewblock.io/arweave). Then in the block page, Click `Link` button and it will show your NFT.
+2) Just a few minutes you could search your txID on [https://viewblock.io/arweave](https://viewblock.io/arweave). Then in the block page, Click `Link` button and it will show your NFT.
+
+3) To view your JPEG/PNG/HTML file in your browser or fetch it to your application frontend you can use `https://arweave.net/<NFT id>`
