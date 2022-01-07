@@ -18,7 +18,7 @@ First run `yarn` to install the node packages.
 yarn
 ```
 
-### Option 1: Deploy a NFY by using image url
+### Option 1: Deploy a NFT by using image url
 
 Check the `creatingNewNFT.js` file. Change the info to your own:
 
